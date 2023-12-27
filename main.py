@@ -40,4 +40,5 @@ def wales_bridge_statuses():
 resps = wales_bridge_statuses()
 
 if __name__ == "__main__":
-    get_statuses()
+    from os import environ
+    app.run(debug=False, host="0.0.0.0", port=environ.get("PORT", 5000))
