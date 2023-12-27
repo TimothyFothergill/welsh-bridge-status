@@ -1,1 +1,1 @@
-web: flask run
+web: gunicorn your_app_name:app
